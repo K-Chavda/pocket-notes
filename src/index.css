@@ -1,0 +1,30 @@
+:root {
+  --background-color: #ffffff;
+  --primary-color: #ffffff;
+  --secondary-color: #000000;
+  --light-blue: #dae5f5;
+  --purple-color: #16008b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
+}

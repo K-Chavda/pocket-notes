@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+li {
+  list-style: none;
+}
+
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: aqua;
+}
+
+.noteListLeftContainer {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  height: 100%;
+  flex: 2;
+  padding: 20px 10px;
+}
+
+.headingContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.headingText {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.noteListContainer {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 10px;
+  flex: 5;
+  position: relative;
+}
+
+.addNoteSticky {
+  height: 50px;
+  width: 50px;
+  border-radius: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 100%;
+  left: 100%;
+  background-color: purple;
+}
+
+.noteListUlContainer {
+  width: 100%;
+  height: calc(100% - 50px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  /*   gap: 10px; */
+  padding: 10px;
+}
+
+.noteListItemsContainer {
+  width: 100%;
+  min-height: 50px;
+  max-height: 50px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  border-bottom: 1px solid grey;
+}
+
+.noteListItemIcon {
+  background-color: red;
+  height: 40px;
+  width: 40px;
+  border-radius: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.noteListRightContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 4;
+}
