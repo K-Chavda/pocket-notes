@@ -1,0 +1,228 @@
+.backButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+.backButton > a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.noteDetaiilsMainContainer {
+  background-color: var(--purple-color);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.noteDetailHeadingContainer {
+  width: 100%;
+  height: 10%;
+  color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0em 0.5em;
+}
+
+.noteDetailItem {
+  width: 100%;
+  min-height: 4.5em;
+  padding: 0.6em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+}
+
+.noteDetailItemIcon > span {
+  background-color: #0047ff;
+  min-height: 3em;
+  min-width: 3em;
+  border-radius: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: var(--primary-color);
+}
+
+.noteDetailItemTitle {
+  font-size: 20px;
+  letter-spacing: 2%;
+}
+
+.noteDetailsContainer {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--light-blue);
+  padding: 2em 0em;
+  gap: 1em;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.noteCardContainer {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--primary-color);
+  border-radius: 0.2em;
+  padding: 1em;
+  gap: 1em;
+}
+
+.noteCardDetails {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7em;
+  text-align: left;
+}
+
+.noteCardDateTime {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  align-self: flex-end;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7em;
+  gap: 0.5em;
+}
+
+.noteDateTimeSeperator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.noteInputContainer {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+.noteInputField {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1em 1em;
+  background-color: var(--primary-color);
+  position: relative;
+}
+
+input {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 10vh;
+  text-align: left;
+  padding-bottom: 15%;
+}
+
+.noteSubmitButton {
+  position: absolute;
+  top: 65%;
+  left: 90%;
+  font-size: 24px;
+}
+
+.inactiveNote {
+  display: none;
+}
+
+.noteImageContainer {
+  width: 50%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.noteHeroDetailContainer {
+  width: 50%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.noteHeroHeading {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.noteHeroDetails {
+  font-size: 18px;
+  line-height: 1.5em;
+  text-align: left;
+}
+
+.noteEncryptedContainer {
+  position: absolute;
+  top: 95%;
+}
+
+.noteDetailsContainer::-webkit-scrollbar {
+  width: 0.7em;
+  background-color: #000000a1;
+  border-radius: 2em;
+}
+
+.noteDetailsContainer::-webkit-scrollbar-thumb {
+  border-radius: 2em;
+  border: 2px solid #000000a1;
+  background-color: var(--primary-color);
+}
+
+.noteListUlContainer::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: #d9d9d9;
+  border-radius: 2em;
+}
+
+.noteListUlContainer::-webkit-scrollbar-thumb {
+  border-radius: 2em;
+  border: 2px solid #d9d9d9;
+  background-color: var(--primary-color);
+}
+
+.activeNote {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
+  position: relative;
+}

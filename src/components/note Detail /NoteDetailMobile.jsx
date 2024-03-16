@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Styles from "./NoteDetail.module.css";
+import Styles from "./NoteDetailMobile.module.css";
 import { useSelector, useDispatch } from "react-redux";
 import { addNoteDetails } from "../../features/notes/noteSlice";
 import getInitials from "../../functions/getInitials";
@@ -14,7 +14,17 @@ import { MdOutlineKeyboardBackspace } from "react-icons/md";
 // Images
 import Image from "../../images/Pocket Note Image.png";
 
-function NoteDetail({ noteId }) {
+function NoteDetailMobile({ noteId }) {
+  let vw = Math.max(
+    document.documentElement.clientWidth || 0,
+    window.innerWidth || 0
+  );
+
+  console.log(vw);
+
+  if (vw > 480) {
+    window.location.replace("/");
+  }
   const dispatch = useDispatch();
   const noteDetailList = useSelector((state) => state.notesObject);
 
@@ -146,10 +156,9 @@ function NoteDetail({ noteId }) {
                   <div className={Styles.noteInputContainer}>
                     <div className={Styles.noteInputField}>
                       <input
-                        className={Styles.noteInput}
                         type="text"
                         value={input.noteText}
-                        placeholder="Enter your text here..........."
+                        placeholder="Enter your text here"
                         onChange={handleChangeEvent}
                       />
 
@@ -199,4 +208,4 @@ function NoteDetail({ noteId }) {
   );
 }
 
-export default NoteDetail;
+export default NoteDetailMobile;

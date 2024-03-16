@@ -19,6 +19,7 @@ function NoteList(props) {
   const handleNoteListClick = (noteId) => {
     localStorage.setItem("selectedNoteId", noteId);
     setSelectedNoteId(noteId);
+    window.location.replace("/noteDetail");
   };
 
   return (

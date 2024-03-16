@@ -114,4 +114,8 @@
     background-color: var(--purple-color);
     color: var(--primary-color);
   }
+
+  .modelDialog {
+    width: 100vw;
+  }
 }
