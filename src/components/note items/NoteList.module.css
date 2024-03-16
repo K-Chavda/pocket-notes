@@ -1,0 +1,86 @@
+@import url("../../index.css");
+
+.noteListUlContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.6em;
+  gap: 0.2em;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.noteListItemsContainer {
+  width: 100%;
+  min-height: 4.5em;
+  padding: 0.6em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1em;
+  border-radius: 0.2em;
+}
+
+.noteListItemsContainer:hover {
+  background-color: #ededed;
+}
+
+.noteListItemIcon > span {
+  background-color: #0047ff;
+  min-height: 3em;
+  min-width: 3em;
+  border-radius: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.noteListItemTitle {
+  font-size: 20px;
+  letter-spacing: 2%;
+}
+
+.noteDetailsContainer::-webkit-scrollbar-thumb {
+  border-radius: 2em;
+  border: 2px solid #000000a1;
+  background-color: var(--primary-color);
+}
+
+.noteListUlContainer::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: #d9d9d9;
+  border-radius: 2em;
+}
+
+.noteListUlContainer::-webkit-scrollbar-thumb {
+  border-radius: 2em;
+  border: 2px solid #d9d9d9;
+  background-color: var(--primary-color);
+}
+
+@media only screen and (max-width: 480px) {
+  .noteDetailsContainer::-webkit-scrollbar-thumb {
+    border-radius: 2em;
+    border: 2px solid #000000a1;
+    background-color: var(--primary-color);
+  }
+
+  .noteListUlContainer::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: #d9d9d9;
+    border-radius: 2em;
+  }
+
+  .noteListUlContainer::-webkit-scrollbar-thumb {
+    border-radius: 2em;
+    border: 2px solid #d9d9d9;
+    background-color: var(--primary-color);
+  }
+}
